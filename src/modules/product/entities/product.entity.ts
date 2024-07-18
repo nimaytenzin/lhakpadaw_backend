@@ -14,7 +14,7 @@ export class Product {
   id: number;
 
   @Column({ type: 'varchar', length: 255 })
-  title: string;
+  name: string;
 
   @Column({ type: 'text', nullable: true })
   description: string;
@@ -23,8 +23,8 @@ export class Product {
   activities: Activity[];
 
   @CreateDateColumn({ type: 'timestamp' })
-  created_at: Date;
+  createdAt: Date;
 
   @UpdateDateColumn({ type: 'timestamp' })
-  updated_at: Date;
+  updatedAt: Date;
 }
